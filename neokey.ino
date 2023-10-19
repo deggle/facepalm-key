@@ -3,7 +3,6 @@
 #include "HID-Project.h"
 
 Adafruit_NeoPixel strip = Adafruit_NeoPixel(NUM_NEOPIXEL, PIN_NEOPIXEL, NEO_GRB + NEO_KHZ800);
-
 Adafruit_FreeTouch qt = Adafruit_FreeTouch(PIN_TOUCH, OVERSAMPLE_4, RESISTOR_50K, FREQ_MODE_NONE);
 
 int16_t neo_brightness = 255;
@@ -67,6 +66,7 @@ void onReleased() {
 }
 
 uint8_t j = 0;
+
 void loop() {
   
   // check touch
